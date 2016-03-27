@@ -13,4 +13,4 @@ var server = app.listen(port, function() {
 	console.log('Server Active on', port);
 });
 
-module.exports = server; 
+module.exports = app; 

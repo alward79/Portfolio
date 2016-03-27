@@ -20,7 +20,15 @@ describe('API', function(){
 			.expect('Content-Type', /json/)
 			.expect(200, {Hello : "World"}, done)
 
+	});
 
-		
+	it('/status Should return healthy:true', function testHealth(done){
+
+		request(server)
+			.get('/api/status ')
+			.set('Accept', 'application/json')
+			.expect('Content-Type', /json/)
+			.expect(200, {healthy : true}, done);
+
 	});
 });
