@@ -5,12 +5,12 @@ describe('API', function(){
 	var server ;
 
 	beforeEach(function() {
-		server = require('../js/server.js');
+		server = require('../src/server.js');
 	});
 
-	afterEach(function() {
-		server.close();
-	});
+	afterEach(function(){
+    	server.close();
+  	});
 
 	it('Should return hello: world', function testHealth(done){
 

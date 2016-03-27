@@ -1,6 +1,6 @@
 module.exports = function(express) {
 	var router = express.Router();
-	var server = require('../js/server.js');
+	var server = require('../src/server.js');
 	var request = require('supertest');
 
 	router.get('/v1', function(req, res) {
